@@ -1,0 +1,94 @@
+
+
+<mat-card class="mat-elevation-z20">
+<mat-card-header>
+  <mat-card-title>Register</mat-card-title>
+</mat-card-header>
+<mat-card-content>
+  <form [formGroup]="register" >
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username"  formControlName="userName" required>
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="Password" type="password" formControlName="password" >
+      </mat-form-field></td>
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="Email" type="email" formControlName="email" >
+      </mat-form-field></td>
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="Conform Password" type="password" formControlName="conformPassword" >
+      </mat-form-field></td>
+    </tr>
+    <tr>
+      <td><mat-form-field class="example-full-width">
+        <input matInput placeholder="Phone" type="number" formControlName="phoneNum" required>
+      </mat-form-field></td>
+    </tr>
+  </table>
+    
+  </form>
+</mat-card-content>
+<mat-card-actions>
+  <button mat-raised-button  id="button" color="primary" (click)="Register(register.value)" >Register</button>
+</mat-card-actions>
+</mat-card>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<div class="row">
+  <div class="col-12">
+    <div class="container">
+<form [formGroup]="register" (ngSubmit)="Register(register.value)" class="my-5 mainForm">
+
+  <div> 
+    <input  type="text" placeholder="Username" id="register-username" formControlName="userName" >
+  </div>
+  <div> 
+    <input  type="email" placeholder="Email" id="register-email" formControlName="email" >
+  </div>   
+  <div> 
+    <input  type="number" placeholder="Phone" id="register-Number" formControlName="number" >
+  </div>   
+   <div>
+    <input  type="password" placeholder="Password" formControlName="password" id="register-password" type="password" >
+   </div>
+  <div>
+    <button type="submit"  id="registerButton" >Register</button>
+  </div>
+
+</form>
+</div>
+  </div>
+</div> -->

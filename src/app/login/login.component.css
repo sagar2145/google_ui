@@ -1,0 +1,110 @@
+
+/* #user{
+  background-color: lightgrey;
+   position: relative;
+    top: -0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+
+
+#registerButton{
+   text-align: center;
+  padding:10px;
+ border-style: none;
+  border-radius: 25px;
+  padding-left: 50px;
+padding-right: 50px;
+outline-style: none;
+background-color: rgb(33, 193, 214);
+margin-top: 3em;
+}
+
+#loginButton{
+  text-align: center;
+ border-style: none;
+  border-radius: 25px;
+outline-style: none;
+background-color: rgb(33, 193, 214);
+margin-bottom: 4em;
+margin-top: 5em;
+}
+
+
+input[type=text],input[type=password]{
+  margin-top: 1em;
+  margin-bottom: 3px;
+  padding:10px;
+  border-style: none;
+   border-radius: 25px;
+   padding-left: 50px;
+ padding-right: 50px;
+ outline-style: none;
+ text-align: center;
+}
+
+
+
+form { 
+  text-align: center;
+  background-color: lightgrey;
+  width: 350px;
+  padding: 3em 1em 0 1em;
+  margin-left: 450px; 
+  margin-top: 150px;
+  height: 27em;
+  border-radius: 20px;
+  
+  } */
+
+
+    :host {
+      display: flex;
+      justify-content: center;
+      margin: 100px 0px;
+      height: 30em;
+    }
+    .mat-form-field {
+      width: 100%;
+      min-width: 300px;
+    }
+    mat-card-title,
+    mat-card-content {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .mat-card-title{
+      margin-left: 5em;
+    }
+
+    #button{
+      width: 20em;
+      border-radius: 2em;
+      margin-bottom: 3em;
+    
+      margin-left: 15px;
+      height: 3em;
+    }
+    #user{
+      background-color:white;
+      position: relative;
+        top: -0.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .mat-elevation-z20{
+  border-top-left-radius: 3em;
+  box-shadow: 0 16px 24px 2px rgba(107, 107, 243, 0.664), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    #registerbutton{
+      margin-top: 2em;
+      width: 20em;
+      border-radius: 2em;
+      margin-bottom: 3em;
+      margin-left: 15px;
+      height: 3em;
+
+    }

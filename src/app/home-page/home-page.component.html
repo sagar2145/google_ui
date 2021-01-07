@@ -1,0 +1,206 @@
+<div class="row-6">
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button>
+      <mat-icon (click)="home.toggle()">menu</mat-icon>
+    </button>
+    <span class="menu-spacer"></span>
+    <div>
+      <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+      <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+      <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+      <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+      <a mat-button [routerLink]="'/activities'"> Activities </a>
+      <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+
+    </div>
+  </mat-toolbar-row>
+  
+</mat-toolbar>
+</div>
+
+<mat-sidenav-container>
+  <mat-sidenav #home>
+    <div class="icona">
+    <mat-icon [inline]="true">home</mat-icon>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+
+      <a mat-list-item (click)="foodorder.toggle()"> Food Order </a>
+      <a mat-list-item (click)="travelling.toggle()"> Travelling </a>
+      <a mat-list-item (click)="shopping.toggle()"> Shopping </a>
+      <a mat-list-item (click)="cricbuzz.toggle()"> Cricbuzz </a>
+      <a mat-list-item (click)="hotel.toggle()"> Hotels </a>
+      <a mat-list-item (click)="library.toggle()"> Library </a>
+      <!-- <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a> -->
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+  <mat-sidenav #foodorder>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="foodorder.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-divider></mat-divider>
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="'/zomatohome'"> Zomato </a>
+      <a mat-list-item [routerLink]="'/swiggyhome'" > Swiggy </a>
+      <a mat-list-item [routerLink]="'/dominoshome'"> Dominos </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav #travelling>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="travelling.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item>Indian Railways</a>
+      <a mat-list-item>MakeMyTrip</a>
+      <a mat-list-item>Goibibo</a>
+      <a mat-list-item>Indian Airlines</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav #shopping>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="shopping.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item>Amazon</a>
+      <a mat-list-item>Flipkart</a>
+      <a mat-list-item>Bigbaazar</a>
+      <a mat-list-item>Myntra</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav #hotel>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="hotel.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item>Oyo</a>
+      <a mat-list-item>Trivago</a>
+      <a mat-list-item>Travelocity</a>
+      <a mat-list-item>Expedia</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav #cricbuzz>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="cricbuzz.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item>INDIA</a>
+      <a mat-list-item>PAKISTAN</a>
+      <a mat-list-item>AUSTRALIA</a>
+      <a mat-list-item>WESTINDIES</a>
+      <a mat-list-item>ENGLAND</a>
+      <a mat-list-item>NEWZELAND</a>
+      <a mat-list-item>BANGLADESH</a>
+      <a mat-list-item>SRILANKA</a>
+      <a mat-list-item>IRELAND</a>
+      <a mat-list-item>AFGHANISTAN</a>
+      <a mat-list-item>SCOTLAND</a>
+      <a mat-list-item>NEPAL</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav #library>
+    <div class="icon">
+      <button mat-button matPrefix mat-icon-button (click)="library.toggle()">
+        <mat-icon>arrow_back</mat-icon>MAIN MENU
+      </button>
+    </div>
+    <mat-nav-list>
+      <a mat-list-item>History</a>
+      <a mat-list-item>Physics</a>
+      <a mat-list-item>Geography</a>
+      <a mat-list-item>Science</a>
+      <a mat-list-item>Famous Authors</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+
+
+
+<!-- <div dir="rtl"> 
+      <button mat-button [matMenuTriggerFor]="animals">Animal index</button>
+
+      <mat-menu #animals="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+        <button mat-menu-item [matMenuTriggerFor]="invertebrates">Invertebrates</button>
+      </mat-menu>
+     
+      <mat-menu #vertebrates="matMenu">
+        <button mat-menu-item [matMenuTriggerFor]="fish">Fishes</button>
+        <button mat-menu-item [matMenuTriggerFor]="amphibians">Amphibians</button>
+        <button mat-menu-item [matMenuTriggerFor]="reptiles">Reptiles</button>
+        <button mat-menu-item>Birds</button>
+        <button mat-menu-item>Mammals</button>
+      </mat-menu>
+      
+      <mat-menu #invertebrates="matMenu">
+        <button mat-menu-item>Insects</button>
+        <button mat-menu-item>Molluscs</button>
+        <button mat-menu-item>Crustaceans</button>
+        <button mat-menu-item>Corals</button>
+        <button mat-menu-item>Arachnids</button>
+        <button mat-menu-item>Velvet worms</button>
+        <button mat-menu-item>Horseshoe crabs</button>
+      </mat-menu>
+      
+      <mat-menu #fish="matMenu">
+        <button mat-menu-item>Baikal oilfish</button>
+        <button mat-menu-item>Bala shark</button>
+        <button mat-menu-item>Ballan wrasse</button>
+        <button mat-menu-item>Bamboo shark</button>
+        <button mat-menu-item>Banded killifish</button>
+      </mat-menu>
+      
+      <mat-menu #amphibians="matMenu">
+        <button mat-menu-item>Sonoran desert toad</button>
+        <button mat-menu-item>Western toad</button>
+        <button mat-menu-item>Arroyo toad</button>
+        <button mat-menu-item>Yosemite toad</button>
+      </mat-menu>
+      
+      <mat-menu #reptiles="matMenu">
+        <button mat-menu-item>Banded Day Gecko</button>
+        <button mat-menu-item>Banded Gila Monster</button>
+        <button mat-menu-item>Black Tree Monitor</button>
+        <button mat-menu-item>Blue Spiny Lizard</button>
+        <button mat-menu-item disabled>Velociraptor</button>
+      </mat-menu>
+       </div> -->
+
+
+
+
+<!-- <mat-menu #appMenu="matMenu" yPosition="above">
+      <button mat-menu-item>Settings</button>
+      <button mat-menu-item>Help</button>
+    </mat-menu>
+    
+    <button mat-icon-button [matMenuTriggerFor]="appMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button> -->

@@ -1,0 +1,41 @@
+
+<app-swiggy-header></app-swiggy-header>
+ 
+<mat-toolbar [ngStyle]="{backgroundColor:'#37718e'}" class="head">
+    <h1>Help & Support</h1>
+    <h4>Let's take a step ahead and help you better.</h4>
+</mat-toolbar>
+
+
+<mat-tab-group mat-align-tabs="center">
+    <mat-tab label="Legal">
+            <mat-accordion>
+                    <div *ngFor="let item of itemsList">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                            {{ item.title }} 
+                      </mat-expansion-panel-header>
+                  
+                      {{ item.description }}
+                  
+                    </mat-expansion-panel>
+                </div>
+                  </mat-accordion>
+
+    </mat-tab>
+    <mat-tab label="FAQs">
+            <mat-accordion>
+                    <div *ngFor="let item of itemsList">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                            {{ item.title }} 
+                      </mat-expansion-panel-header>
+                  
+                      {{ item.description }}
+                  
+                    </mat-expansion-panel>
+                </div>
+                  </mat-accordion>
+    </mat-tab>
+
+</mat-tab-group>

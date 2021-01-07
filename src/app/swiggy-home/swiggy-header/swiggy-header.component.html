@@ -1,0 +1,21 @@
+<div class="row-6" id="first-row">
+    <mat-toolbar [ngStyle]="{'backgroundColor': 'white'}">
+    <mat-toolbar-row>
+            <button mat-icon-button>
+           <mat-icon>restaurant</mat-icon><input type="textbox" id="search-button" placeholder="Search for area,street name..">
+                  </button>
+            <span class="menu-spacer"></span>
+            
+        <div>
+           
+            <a mat-button><mat-icon>search</mat-icon> Search</a>
+            <a mat-button [routerLink]="['/swiggyoffers']"><mat-icon>star</mat-icon> Offers</a>
+            <a mat-button [routerLink]="['/swiggyhelp']"><mat-icon>help</mat-icon> Help</a>
+            <a mat-button  (click)="openDialog()"><mat-icon >person_add</mat-icon> Sign In</a>
+            <a mat-button><mat-icon>local_grocery_store</mat-icon> Cart</a>
+
+            
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>
+</div>

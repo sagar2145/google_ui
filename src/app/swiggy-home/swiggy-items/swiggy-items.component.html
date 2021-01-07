@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col" *ngFor="let res of resData" (click)="showMenu(res)">
+        <mat-card class="example-card">
+            <img src="{{res.imgURL}}" id="itemimg">
+            <mat-card-title id="resname">{{res.resName}}</mat-card-title>
+            <mat-card-subtitle flex="50%">{{res.resItem}}</mat-card-subtitle>
+
+            <p id="ratingicon">
+                <mat-icon>star</mat-icon>
+                <span id="rating">{{res.resRating}}</span>
+            </p>
+            <p id="delvtime">{{res.deliveryTime}}mins</p>
+            <p id="discount">{{res.discount}} For Two</p>
+            <mat-divider></mat-divider>
+            <p id="coupon">
+                <mat-icon id="couponstar">star</mat-icon>
+                {{res.offer}}%off | Use the coupon SWIGGYIT
+            </p>
+            
+
+        </mat-card>
+        
+
+    </div>
+
+</div>

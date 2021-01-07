@@ -1,0 +1,40 @@
+
+
+
+<app-swiggy-header></app-swiggy-header>
+
+
+
+<owl-carousel-o [options]="customOptions" class="slideimg">
+ 
+    <ng-template carouselSlide *ngFor="let slide of slidesStore" [id]="slide.id" >
+      <img [src]="slide.src" alt="slide.alt" title="slide.title" >
+      {{slide.title}}
+    </ng-template>
+   
+</owl-carousel-o>
+
+<mat-tab-group animationDuration="0ms" mat-align-tabs="end">
+        <mat-tab label="Relevance"><app-swiggy-items ></app-swiggy-items></mat-tab>
+        <mat-tab label="Cost For Two"><app-swiggy-items ></app-swiggy-items></mat-tab>
+        <mat-tab label="Delivery Time"><app-swiggy-items ></app-swiggy-items></mat-tab>
+        <mat-tab label="Rating"><app-swiggy-items ></app-swiggy-items></mat-tab>
+        <mat-tab label="Filters"><app-swiggy-items ></app-swiggy-items></mat-tab>
+      </mat-tab-group>
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+

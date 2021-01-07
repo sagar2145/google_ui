@@ -1,0 +1,289 @@
+
+.menu-spacer{
+    flex: 1 1 auto;
+}
+a{
+    padding-right: 5em;
+}
+.menu-spacer1{
+    flex: 1 1 auto;
+    padding-top:15em;
+}
+#second-row{
+  border-top-left-radius: 3em;
+  box-shadow: 0 16px 24px 2px rgb(245, 245, 248), 0 6px 15px 1px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000;
+    
+    
+}
+#first-row{
+    border-top-left-radius: 3em;
+box-shadow: 0 16px 24px 2px rgb(245, 245, 248), 0 6px 15px 1px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  
+
+
+}
+#search-button{
+    margin-left: 7em;
+    border-radius: 2em;
+    width: 24em;
+    height: 30px;
+    outline-style: none;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+}
+
+#mn{
+    height: 12em;
+}
+h1{
+    color: white;
+    margin-left: 2em;
+    margin-top: 3em;
+    font-size: 28px;
+}
+#img{
+    margin-top: 9em;
+    padding: 0;
+    width: 12em;
+    height: 8em;
+    margin-left: 2em;
+  }
+
+ #img1{
+  height: 13em;
+  padding: 0em;
+ }
+ #img2{
+  float: right;
+  /* float: top; */
+  height: 13em;
+  position: relative;
+  top: -15em;
+ }
+  .example-card{
+      padding: 0em;
+  }
+  p{
+    margin-top: 10em;
+    margin-left: -214px;
+    color: #e67500;
+    font-size: 15px;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  }
+  h2{
+    margin-top: 12em;
+    margin-left: -567px;
+    color: #e67500;
+    font-size: 15px;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  }
+  #rating{
+    font-size: 15px;
+    margin-top: 16em;
+    margin-left: -95px;
+    color: white;
+  }
+  mat-icon{
+    font-size: 15px;
+    position: relative;
+    top: 2px;
+    left: 5px;
+  }
+  #ratingcount{
+    font-size: 12px;
+    color: #e67500;
+    margin-top: 24em;
+    margin-left: -39px;
+  }
+  #time{
+    font-size: 16px;
+    margin-top: 15em;
+    margin-left: -32em;
+    color: white;
+  }
+  #timealias{
+    font-size: 12px;
+    margin-top: 24em;
+    margin-left: -5em;
+    color: #e67500;
+  }
+  #cost{
+    font-size: 16px;
+    color: white;
+    margin-top: 15em;
+    position: relative;
+    right: 32em;
+  }
+  #costalias{
+    position: relative;
+    font-size: 12px;
+    top: 12em;
+    left: -45em;
+    color: #e67500;
+  }
+  .mat-divider{
+    color: white;
+    background-color: yellow;
+    height: 43px;
+    position: relative;
+    left: -554px;
+    top: 132px;
+  }
+ 
+  /* #right-content{
+    margin-left: 74em;
+    margin-top: -13em;
+  } */
+
+  #menu-img{
+    margin-right: 4em;
+    /* margin-top: 6em; */
+    height: 13em;
+    margin-top: 0em;
+    /* vertical-align: bottom; */
+  }
+  
+  #menu-name{
+    margin-left: 1.5em;
+    margin-top: 1em;
+    color: #282c3f;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  #veg-img{
+    position: relative;
+    top: 115px;
+    right: 332px;
+    width: 15px;
+  }
+  #menu-type{
+    position: relative;
+    top: -10em;
+    left: 236px;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    color: #7e808c;
+    font-size: 13px;
+  }
+  #menu-price{
+    position: relative;
+    top: -275px;
+    right: -236px;
+    color: #535665;
+    font-size: 15px;
+  }
+  .menu-button{
+    color: green;
+    background-color: white;
+    border-color: yellowgreen;
+    position: relative;
+    top: -3.8em;
+    left: 24em;
+    width: 5em;
+    height: 2em;
+    border-style: solid;
+  }
+
+
+
+
+
+
+
+
+/* Style the tab */
+.tab {
+  float: right;
+  position: fixed;
+  /* position: relative; */
+    left: 9em;
+  
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  font-size: 18px;
+  color: rgb(28, 28, 28);
+  padding: 8px;
+  width: 100%;
+  border: none;
+  margin-right: 5em;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.8rem 2rem;
+  outline: none;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgb(247, 235, 236));
+  color: rgb(237, 90, 107);
+  border-right: 3px solid rgb(237, 90, 107);
+  
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: rgb(37, 16, 16);
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#head{
+  margin-left: 0.1em;
+  margin-top: 0em;
+  font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  font-size: 30px;
+  color: #282c3f;
+  padding: 26px 0 32px;
+  letter-spacing: -.3px;
+    font-weight: 600;
+}
+
+#item-count{
+  margin-left: 0.5em;
+  margin-top: -2.5em;
+  font-size: 13px;
+    color: #686b78;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#price{
+  color: #535665;
+    font-size: 15px;
+    margin-left: 0.5em;
+  margin-top: -0.5em;
+}
+#item-name{
+  font-size: 16px;
+    color: #282c3f;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 0.5em;
+  margin-top: 0em;
+  letter-spacing: -.3px;
+    font-weight: 600;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+}
+#veg-icon{
+  left: -1em;
+  top: 1.3em;
+  position: relative;
+    width: 15px;
+}
+
+

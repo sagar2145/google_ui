@@ -1,0 +1,38 @@
+
+#first-row{
+    border-top-left-radius: 3em;
+box-shadow: 0 16px 24px 2px rgb(245, 245, 248), 0 6px 15px 1px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+position: sticky;
+position: -webkit-sticky; /* For macOS/iOS Safari */
+top: 0; /* Sets the sticky toolbar to be on top */
+z-index: 1000;
+}
+
+#search-button{
+    margin-left: 7em;
+    border-radius: 2em;
+    width: 24em;
+    height: 30px;
+    outline-style: none;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+}
+
+
+.menu-spacer{
+    flex: 1 1 auto;
+}
+a{
+    padding-right: 5em;
+}
+.menu-spacer1{
+    flex: 1 1 auto;
+    padding-top:15em;
+}
+#second-row{
+    margin-top: 2em;
+}
+
+
+

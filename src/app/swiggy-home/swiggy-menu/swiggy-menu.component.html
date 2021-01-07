@@ -1,0 +1,68 @@
+<app-swiggy-header></app-swiggy-header>
+<div class="row-6" id="second-row">
+    <mat-toolbar [ngStyle]="{'backgroundColor': '#171a29'}" id="mn">
+        <mat-toolbar-row>
+            <img src="assets/swiggyimages/moriz.jpg" id="img">
+
+            <h1>Moriz Restaurant</h1>
+            <p>Fast Food, Snacks, Pastas, Salads, Beverages, Home Food, Italian, North Indian, Ma</p>
+            <h2>ACES Layout</h2>
+            <span id="rating">
+                <mat-icon>star</mat-icon>4.5
+            </span>
+            <span id="ratingcount">100+ Ratings</span>
+            <hr>
+            <mat-divider vertical></mat-divider>
+            <span id="time">30 mins</span>
+            <span id="timealias">Delivery Time</span>
+            <hr>
+            <mat-divider vertical></mat-divider>
+            <span id="cost">150</span>
+            <span id="costalias">Cost for two</span>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
+
+     <div class="row">
+         <div class="col"> 
+             <div class="tab">
+                 
+            <button >Bestsellers</button>
+            <button  >Starters</button>
+            <button >Main Course</button>
+            <button  >SeaFood Specials</button>
+            <button  >Breads</button>
+            <button >Rice And Biryani</button>
+        
+          </div>
+        </div>
+         <div class="col">
+             <div *ngFor="let menu of menuData">
+            <p id="head" >{{menu.menuType}}</p>
+            <p id="item-count">4ITEMS</p>
+            <img src="assets/swiggyimages/veg.png" id="veg-icon">
+            <p id="item-name">{{menu.itemName}}</p>
+            <p id="price">{{menu.price}}</p>
+            <button class="menu-button">ADD</button>
+            <hr>    
+        </div>
+            </div>
+         <div class="col">third</div>
+     </div>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
