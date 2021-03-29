@@ -1,0 +1,82 @@
+<app-swiggy-header></app-swiggy-header>
+
+<!-- <div class="col-6">
+
+</div>
+<div class="col-6">
+    Working
+</div> -->
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <div id="firstDiv">
+                <h1 id="header">Choose a delivery address</h1>
+                <h2 id="subHeader">Multiple addresses in this location</h2>
+
+                <div class="row">
+                    <div *ngFor="let data of allAdressData">
+                        <div class="col">
+                            <mat-card class="example-card">
+                                <mat-icon>{{data.icon}}</mat-icon>
+                                <p id="addType">{{data.addressType}}</p>
+                                <h1 id="address">
+                                    {{data.address}}
+                                </h1>
+                                <h1 id="time">{{data.time}}</h1>
+                                <button id="deliver" (click)="goToPayment()">DELIVER HERE</button>
+                            </mat-card>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <mat-card class="example-card">
+                            <mat-icon>home</mat-icon>
+                            <p id="addType"> home</p>
+                            <h1 id="address">27th Main Rd, JBC Colony, 8th Block, Marthalli, Bengaluru, Karnataka 560095
+                            </h1>
+                            <h1 id="time">22mins</h1>
+                            <button id="newAddress">ADD NEW</button>
+                        </mat-card>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+
+            <div id="cart1">
+                <!-- <div *ngIf="showCart"> -->
+                    <h1 id="cartHeader">Cart</h1>
+                    <h2 id="cartItemsCount">{{itemCount}} Items</h2>
+                    <div id="cart">
+                        <div *ngFor="let div of totalItems" id="cart2">
+                            <h1 id="cartItemName">{{div.itemName}}</h1>
+
+                            <div id="buttons">
+                                <mat-icon id="remove" (click)="remove(div)">remove</mat-icon>
+                                <h1 id="itemCount">{{div.count}}</h1>
+                                <mat-icon id="add" (click)="add(div)">add</mat-icon>
+                            </div>
+                            <h2 id="itemCost">{{div.price}}</h2>
+                        </div>
+                        <div>
+                            <h1 id="billHeader">Bill Details</h1>
+                            <h1 id="itemTotal">Item Total</h1>
+                            <h1 id="totalAmt">{{subTotal}}</h1>
+                            <h1 id="delPartFee">Delivery Partner Fee</h1>
+                            <h1 id="delFee">50</h1>
+                            <h1 id="tax">Taxes and Charges</h1>
+                            <h1 id="taxFee">30</h1>
+                            <h1 id="subTotal">TO PAY</h1>
+                            <h2 id="totalAmount">{{amountToPay}}</h2>
+                          
+
+                        </div>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

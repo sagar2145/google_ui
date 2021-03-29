@@ -26,33 +26,33 @@ export class SwiggyHomeComponent implements OnInit {
   slidesStore = [
     {
       id:1,
-      src:'https://i.picsum.photos/id/976/400/250.jpg',
+      src:'assets/swiggyimages/bajrangi.jpg',
       alt:'Image_1',
-      title:'sfsfdsdf'
+      title:'Bar and Restaurant'
     },
     {
       id:2,
-      src:'https://i.picsum.photos/id/996/400/250.jpg',
+      src:'assets/swiggyimages/bar.jpg',
       alt:'Image_2',
-      title:'afafadsa'
+      title:'Leon Grill'
     },
     {
       id:3,
-      src:'https://i.picsum.photos/id/400/400/250.jpg',
+      src:'assets/swiggyimages/noor.jpg',
       alt:'Image_3',
-      title:'Image_3'
+      title:'Punjabi Dhaba'
     },
     {
       id:4,
-      src:'https://i.picsum.photos/id/316/400/250.jpg',
+      src:'assets/swiggyimages/bajrangi.jpg',
       alt:'Image_4',
-      title:'Image_4'
+      title:'Noor Dhaba'
     },
     {
       id:5,
-      src:'https://i.picsum.photos/id/705/400/250.jpg',
+      src:'assets/swiggyimages/bar.jpg',
       alt:'Image_5',
-      title:'Image_5'
+      title:'Mashoor Dhaba'
     }
   ]
 

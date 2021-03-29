@@ -40,9 +40,9 @@ box-shadow: 0 16px 24px 2px rgb(245, 245, 248), 0 6px 15px 1px rgba(0, 0, 0, 0.1
 #mn{
     height: 12em;
 }
-h1{
+#resName{
     color: white;
-    margin-left: 2em;
+    margin-left: 5em;
     margin-top: 3em;
     font-size: 28px;
 }
@@ -53,6 +53,7 @@ h1{
     height: 8em;
     margin-left: 2em;
   }
+
 
  #img1{
   height: 13em;
@@ -70,12 +71,12 @@ h1{
   }
   p{
     margin-top: 10em;
-    margin-left: -214px;
+    margin-left: -81px;
     color: #e67500;
     font-size: 15px;
     font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
   }
-  h2{
+  #address{
     margin-top: 12em;
     margin-left: -567px;
     color: #e67500;
@@ -85,20 +86,20 @@ h1{
   #rating{
     font-size: 15px;
     margin-top: 16em;
-    margin-left: -95px;
+    margin-left: -100px;
     color: white;
   }
   mat-icon{
     font-size: 15px;
     position: relative;
     top: 2px;
-    left: 5px;
+    left: 8px;
   }
   #ratingcount{
     font-size: 12px;
     color: #e67500;
     margin-top: 24em;
-    margin-left: -39px;
+    margin-left: -38px;
   }
   #time{
     font-size: 16px;
@@ -131,7 +132,7 @@ h1{
     background-color: yellow;
     height: 43px;
     position: relative;
-    left: -554px;
+    left: -537px;
     top: 132px;
   }
  
@@ -283,7 +284,126 @@ h1{
   left: -1em;
   top: 1.3em;
   position: relative;
-    width: 15px;
+    width: 12em;
+}
+#cartHeader{
+  font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  font-size: 36px;
+  color: #282c3f;
+  top: 23px;
+  left: 51px;
+  position: relative;
+}
+#cartItemsCount{
+  font-size: 13px;
+    color: #686b78;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    top: 6px;
+    left: 57px;
+}
+#cartItemName{
+  margin-left: 58px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+  position: relative;
+    top: 23px;
+}
+
+#buttons{
+  color: green;
+  margin-left: 180px;
+  margin-top: -24px;
+  border-color: yellowgreen;
+  border-style: solid;
+  width: 72px;
+  height: 26px;
+  cursor: pointer;
+}
+#remove{
+  position: relative;
+  left: 2px;
+}
+#add{
+  left: 48px;
+    position: relative;
+    top: -69px;
+}
+#itemCount{
+  position: relative;
+    top: -30px;
+    left: 28px;
+    font-size: 13px;
+    color: green;
+}
+#cart{
+  position: fixed;
+  overflow: scroll;
+  /* overflow-x: scroll; */
+  overflow-x: hidden;
+  height: 250px;
+  width: 25em;
+}
+#cart1{
+  position: fixed;
+}
+#subTotal{
+  color: #3d4152;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  left: 59px;
+  top: 13px;
+}
+#totalAmount{
+  color: #3d4152;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 289px;
+    top: -36px;
+}
+#description{
+  font-size: 13px;
+    font-weight: 300;
+    color: #7e808c;
+    position: relative;
+    top: -60px;
+    left: 59px;
+}
+#itemCost{
+  font-size: 16px;
+    color: #535665;
+    position: relative;
+    left: 284px;
+    top: -29px;
+}
+#cart2{
+  height: 50px;
+}
+#checkOut{
+  height: 50px;
+  background-color: #60b246;
+  outline: 0;
+  cursor: pointer;
+  border: 0;
+  color: #fff;
+  margin-top: 28px;
+  text-transform: uppercase;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  position: relative;
+  top: -74px;
+  left: 65px;
+  width: 257px;
 }
 
 

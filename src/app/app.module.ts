@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -37,7 +37,10 @@ import { SwiggyHeaderComponent } from './swiggy-home/swiggy-header/swiggy-header
 import {MatExpansionModule} from '@angular/material/expansion';
 import { SwiggyOffersComponent } from './swiggy-home/swiggy-offers/swiggy-offers.component'
  import {SwiggyService} from './services/swiggy.service';
-import { SwiggySubmenuComponent } from './swiggy-home/swiggy-submenu/swiggy-submenu.component'
+import { SwiggySubmenuComponent } from './swiggy-home/swiggy-submenu/swiggy-submenu.component';
+import { CartComponent } from './cart/cart.component';
+import { SwiggyAdressComponent } from './swiggy-adress/swiggy-adress.component';
+import { PaymentComponent } from './payment/payment.component'
 const appRoutes: Routes = [
 
   {
@@ -77,7 +80,20 @@ const appRoutes: Routes = [
   {
     path:"swiggyoffers",
     component:SwiggyOffersComponent
+  },
+  {
+    path:"swiggyCart",
+    component:CartComponent
+  },
+  {
+    path:"swiggyAddress",
+    component:SwiggyAdressComponent
+  },
+  {
+    path:"swiggyPayment",
+    component:PaymentComponent
   }
+
 
 ];
 
@@ -97,7 +113,10 @@ const appRoutes: Routes = [
     SwiggyHelpComponent,
     SwiggyHeaderComponent,
     SwiggyOffersComponent,
-    SwiggySubmenuComponent
+    SwiggySubmenuComponent,
+    CartComponent,
+    SwiggyAdressComponent,
+    PaymentComponent
     
   ],
   imports: [
@@ -124,6 +143,7 @@ const appRoutes: Routes = [
     MatExpansionModule
   ],
   providers: [SwiggyService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
 export class AppModule { }

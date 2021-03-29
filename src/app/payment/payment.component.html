@@ -1,0 +1,138 @@
+<app-swiggy-header></app-swiggy-header>
+
+<div class="container">
+  <div class="row no-gutters">
+    <div class="col-12 col-sm-6 col-md-8">
+      <div class="col">
+        <mat-card class="example-card">
+          <div class="row">
+            <h1 id="addressHeader">Delivery Address</h1>
+            <button id="changeButton" (click)="changeAddress()">CHANGE</button>
+            <h1 id="addressType">{{address.addressType}}</h1>
+            <h1 id="address">{{address.address}}</h1>
+            <h1 id="time">{{address.time}} mins</h1>
+          </div>
+        </mat-card>
+        <mat-card class="paymentTab">
+          <div class="row">
+            <div class="row">
+              <h1 id="paymentHeader">Choose Payment Method</h1>
+              <div class="col">
+                <div class="tab">
+                  <button (click)="preferredPayment()">Preferred Payment</button>
+                  <button (click)="wallet()">Wallets</button>
+                  <button (click)="credit()">Credit</button>
+                  <button (click)="cardPayment()">Credit/Debit Cards</button>
+                  <button (click)="UPIPayment()">UPI</button>
+                  <button (click)="netBanking()">Netbanking</button>
+                  <button (click)="foodCard()">Food Cards</button>
+                  <button (click)="cashPay()">Pay on Delivery</button>
+                  <!-- <button (click)="ff()">pay2</button> -->
+                  <!-- <button (click)="ew()">Pay2</button> -->
+
+                </div>
+              </div>
+              <div class="col">
+                <div *ngIf="prefPayment">
+                  <mat-card id="preferredPayment">
+                    <p id="phonePeHeader">PhonePe (Wallet/UPI/Cards)</p>
+                    <p id="phonePeBal">Available balance:</p>
+                    <p id="phonePeDesc">Low balance. You need ₹211 more in your account</p>
+                    <button id="phonePeButton">PAY</button>
+                    <p id="phonePeDesc1">*You will be redirected to PhonePe</p>
+                  </mat-card>
+                </div>
+                <div *ngIf="walletPay" id="wallet">
+                  <mat-card id="amazon">
+                    <p id="amazonHeader">Amazon Pay</p>
+                    <button id="amazonButton">Pay</button>
+                  </mat-card>
+                  <mat-card id="payTm">
+                    <p id="paytmHeader">Paytm</p>
+                    <p id="paytmbal">Available balance:</p>
+                    <p id="paytmDesc">Low balance. You need ₹211 more in your account</p>
+                    <button id="paytmButton">Pay</button>
+                  </mat-card>
+                  <mat-card id="gPay">
+                    <p id="gPayHeader">Google Pay</p>
+                    <button id="gPayButton">Pay</button>
+                  </mat-card>
+                </div>
+                <div id="credit" *ngIf="creditPay">
+                  <mat-card id="LazyPay">
+                    <p id="creditHeader">LazyPay</p>
+                    <p id="creditDesc">LazyPay lets you order now & pay later at no extra cost</p>
+                    <button id="creditButton">Link</button>
+                  </mat-card>
+                </div>
+                <div id="card" *ngIf="cardPay">
+                  <mat-card>
+                    <P id="cardHeader">VISA</P>
+                    <p id="cardNumber">1234xxxxxxx-9008</p>
+                    <p id="cardDesc">CREDIT CARD|VALID TILL 02/23</p>
+                    <mat-input></mat-input>
+                    <button id="cardButton">PAY</button>
+                  </mat-card>
+                  <mat-card id="newCaed">
+                    <p id="newCardHeader">Add New Card</p>
+                    <p id="newCardDesc">Save and Pay via Cards.</p>
+                    <button id="newCardButton">ADD NEW</button>
+                  </mat-card>
+                </div>
+                <div id="UPI" *ngIf="UPIPay">
+                  <mat-card id="allUPI">
+                    <p id="allUPIHeader">UPI</p>
+                    <P id="allUPIDesc">Transfer money from your bank account
+                      using UPI with your registered VPA</P>
+                    <P id="allUPISubdDesc">WE ACCEPT gPay,phonePe,BHIM & more</P>
+                  </mat-card>
+                  <mat-card id="savedUPI">
+                    <p id="savedUPIDesc">Pay via saved VPA</p>
+                    <p id="savedUPISubDesc">Choose your registered VPA to pay</p>
+                    <p id="savedUPIid">7788990088@kotak</p>
+                    <button id="savedUPIButton">PAY</button>
+                  </mat-card>
+                  <mat-card id="newVPA">
+                    <p id="newVPAHeader">Pay via New VPA</p>
+                    <p id="newVPASubHeader"> You must have a Virtual Payment Address</p>
+                    <button id="newVPAButton">VERIFY AND PAY</button>
+                  </mat-card>
+                </div>
+                <div id="netBanking" *ngIf="netBankingPay">
+                  <mat-card id="allCards">
+                    <p>HDFC</p>
+                    <P>ICICI</P>
+                    <P>SBI</P>
+                    <P>AXIS</P>
+                    <P>KOTAK</P>
+                  </mat-card>
+                  <mat-card id="dropdown">
+                    <p id="allBanks">other banks</p>
+                    <button id="netPay">PAY</button>
+                  </mat-card>
+                </div>
+                <div id="foodCard" *ngIf="foodcardPay">
+                  <mat-card>
+                  <p id="foodCardDesc">Right Nnow not available due to
+                    some technical reasons</p>
+                  </mat-card>
+                </div>
+                <div id="payOnDelivery" *ngIf="cash">
+                  <mat-card id="cash1">
+                    <p id="cashHeader">Cash</p>
+                    <p id="cashDesc">Online payment recommended to reduce
+                      contact between you and delivery partner</p>
+                    <button id="cashButton" (click)="payOnDelivery()">PAY</button>
+                  </mat-card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-card>
+      </div>
+    </div>
+    <div class="col-6 col-md-4">
+      .col-6 .col-md-4
+    </div>
+  </div>
+</div>

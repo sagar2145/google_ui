@@ -1,0 +1,468 @@
+.example-card{
+    padding-top: 50px;
+    height: 16em;
+    margin-top: 4em;
+}
+
+#addressHeader{
+    font-size: 27px;
+    font-weight: 600;
+    color: #282c3f;
+    position: relative;
+    top: -2px;
+    left: 32px;
+}
+#changeButton{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fc8019;
+    line-height: 2.14;
+    border-style: none;
+    background: none;
+    position: relative;
+    top: -4px;
+    left: 363px;
+}
+#addressType{
+    font-size: 18px;
+    font-weight: 500;
+    color: #282c3f;
+    text-transform: capitalize;
+    position: relative;
+    top: 54px;
+    left: -239px;
+}
+#address{
+    color: #93959f;
+    max-width: 480px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0;
+    font-size: 13px;
+    position: relative;
+    top: 40px;
+    left: 32px;
+}
+#time{
+    color: #282c3f;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    top: 77px;
+    left: -448px;
+}
+#paymentHeader{
+    font-size: 29px;
+    font-weight: 600;
+    color: #282c3f;
+    position: relative;
+    left: 35px;
+    top: 25px;
+
+}
+.paymentTab{
+    margin-top: 3em;
+    height: 70em;
+}
+
+
+/* Style the tab */
+.tab {
+  position: relative;
+  left: -334px;
+  top: 92px;
+  width: 325px;
+    
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    /* display: block; */
+    background-color: inherit;
+    font-size: 18px;
+    color: rgb(28, 28, 28);
+    padding: 8px;
+    width: 100%;
+    border: none;
+    margin-right: 5em;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0.8rem 2rem;
+    outline: none;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background: linear-gradient(90deg, rgb(255, 255, 255), rgb(247, 235, 236));
+    /* color: rgb(237, 90, 107); */
+    border-right: 3px solid rgb(237, 90, 107);
+    font-weight: 600;
+    color: #282c3f;
+    font-size: 18px;
+    
+  }
+  
+  /* Create an active/current "tab button" class */
+  .tab button.active {
+    background-color: rgb(37, 16, 16);
+  }
+  
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+
+  #preferredPayment{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+
+  #wallet{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #amazon{
+    margin-bottom: 20px;
+  }
+
+  #payTm{
+    margin-bottom: 20px;
+  }
+
+  #gPay{
+    margin-bottom: 20px;
+  }
+  #credit{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #card{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #UPI{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #netBanking{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #foodCard{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+  #payOnDelivery{
+    position: relative;
+    left: 23em;
+    top: -25em;
+    width: 386px;
+    height: 311px;
+  }
+ #phonePeHeader{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  top: 27px;
+  left: 14px;
+ }
+ #phonePeButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  top: 44px;
+  left: 10px;
+ }
+ #phonePeDesc1{
+  color: #7e808c;
+  font-size: 12px;
+  position: relative;
+  top: 51px;
+  left: 10px;
+ }
+ #phonePeBal{
+  color: #282c3f;
+  margin-top: 20px;
+  font-size: 13px;
+  position: relative;
+  top: 47px;
+  left: 13px;
+ }
+ #phonePeDesc{
+  font-size: 13px;
+  color: #fa4a5b;
+  font-weight: 300;
+  word-wrap: break-word;
+  position: relative;
+  top: 35px;
+    left: 13px;
+ }
+ #amazonButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 73px;
+ }
+ #amazonHeader{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  left: 72px;
+ }
+ #paytmbal{
+  color: #282c3f;
+  margin-top: 20px;
+  font-size: 13px;
+  position: relative;
+  top: 10px;
+  left: 72px;
+ }
+ #paytmHeader{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  left: 72px;
+ }
+ #paytmDesc{
+  font-size: 13px;
+  color: #fa4a5b;
+  font-weight: 300;
+  word-wrap: break-word;
+  position: relative;
+  left: 71px;
+  top: -4px;
+ }
+ #gPayButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 73px;
+ }
+ #gPayHeader{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  left: 72px;
+ }
+ #paytmButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 73px;
+ }
+ #creditHeader{
+  color: #282c3f;
+  font-weight: 500;
+  font-size: 17px;
+  position: relative;
+  left: 24px;
+ }
+ #creditButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #creditDesc{
+  font-family: ProximaNova;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(62,65,82,.9);
+    position: relative;
+    left: 23px;
+ }
+ #cardButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #newCardButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #savedUPIButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #newVPAButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #netPay{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+ #cashButton{
+  line-height: 40px;
+  text-align: center;
+  padding: 0 16px;
+  background: #60b246;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  outline: 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 600;
+  cursor: pointer;
+  min-width: 142px;
+  max-width: 142px;
+  height: 40px;
+  left: 23px;
+ }
+

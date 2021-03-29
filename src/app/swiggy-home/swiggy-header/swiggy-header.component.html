@@ -2,7 +2,8 @@
     <mat-toolbar [ngStyle]="{'backgroundColor': 'white'}">
     <mat-toolbar-row>
             <button mat-icon-button>
-           <mat-icon>restaurant</mat-icon><input type="textbox" id="search-button" placeholder="Search for area,street name..">
+           <mat-icon [routerLink]="['/homepage']">restaurant</mat-icon>
+           <input type="textbox" id="search-button" placeholder="Search for area,street name..">
                   </button>
             <span class="menu-spacer"></span>
             

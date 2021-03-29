@@ -9,6 +9,8 @@ import { Authenticate } from '../models/authenticate';
 })
 export class LoginService {
 
+  userName = ""
+
   url: string = "http://localhost:8080/api"
 
   constructor(private http : HttpClient, private router : Router) { }

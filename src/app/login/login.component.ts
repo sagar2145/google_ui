@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import {FormGroup, FormControl, Validators} from "@angular/forms";
 import {LoginService} from "../services/login.service";
 import {Authenticate} from "../models/authenticate";
@@ -11,6 +11,8 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit {
  
+  @Output() public found = new EventEmitter<any>();
+
   loginForm : FormGroup;
   status:string;
   message:string;
@@ -34,11 +36,13 @@ export class LoginComponent implements OnInit {
     const userName = this.loginForm.value.userName;
     const password = this.loginForm.value.password;
 
+    this.loginService.userName = this.loginForm.value.userName;
     const authentication = new Authenticate(userName, password);
   
     this.loginService.authenticate(authentication).subscribe((data: any) => {
           
         if(data.status === '200'){
+          
            this.route.navigate(['homepage']);
         }
     });

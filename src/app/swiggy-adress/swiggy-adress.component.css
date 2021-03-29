@@ -1,0 +1,236 @@
+
+#firstDiv{
+    padding: 50px;
+}
+
+#header{
+    font-size: 32px;
+    font-weight: 600;
+    color: #282c3f;
+}
+#subHeader{
+    display: block;
+    font-size: 16px;
+    color: #7e808c;
+    font-weight: 400;
+    position: relative;
+    top: -14px;
+    left: 4px;
+}
+.example-card {
+    width: 310px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 1px;
+    box-shadow: 0 0 5px #e2e6e9;
+  }
+   #addType{
+    position: relative;
+    top: -26px;
+    left: 41px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #282c3f;
+    line-height: 1.18;
+    text-transform: capitalize;
+   }
+   #address{
+    font-size: 13px;
+    color: #93959f;
+    /* margin-bottom: -1px; */
+    font-weight: 400;
+    line-height: 16px;
+    height: 64px;
+    overflow: hidden;
+    position: relative;
+    top: -27px;
+    left: 4px;
+   }
+
+   #time{
+    font-size: 16px;
+    color: #282c3f;
+    font-weight: 500;
+    position: relative;
+    top: -28px;
+    left: 3px;
+   }
+   #deliver{
+    padding: 9px 0;
+    color: #fff;
+    text-transform: uppercase;
+    background: #60b246;
+    border: 0;
+    cursor: pointer;
+    width: 130px;
+    height: 34px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: .3px;
+    position: relative;
+    top: -29px;
+   }
+
+   #newAddress{
+    border: 1px solid #60b246;
+    color: #60b246;
+    background: #fff;
+    /* margin-top: 30px; */
+    position: relative;
+    top: -30px;
+    left: 2px;
+    width: 125px;
+    height: 31px;
+   }
+
+   #cartHeader{
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    font-size: 36px;
+    color: #282c3f;
+    top: 23px;
+    left: 51px;
+    position: relative;
+  }
+  #cartItemsCount{
+    font-size: 13px;
+      color: #686b78;
+      font-weight: 500;
+      text-transform: uppercase;
+      position: relative;
+      top: 6px;
+      left: 57px;
+  }
+  #cartItemName{
+    margin-left: 58px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: ProximaNova,Arial,Helvetica Neue,sans-serif;
+    position: relative;
+      top: 23px;
+  }
+  
+  #buttons{
+    color: green;
+    margin-left: 180px;
+    margin-top: -24px;
+    border-color: yellowgreen;
+    border-style: solid;
+    width: 72px;
+    height: 26px;
+    cursor: pointer;
+  }
+  #remove{
+    position: relative;
+    left: 2px;
+    font-size: 18px;
+    top: 2px;
+  }
+  #add{
+      left: 48px;
+      position: relative;
+      top: -69px;
+      font-size: 16px;
+  }
+  #itemCount{
+    position: relative;
+      top: -30px;
+      left: 28px;
+      font-size: 13px;
+      color: green;
+  }
+  #cart{
+    position: fixed;
+    overflow: scroll;
+    /* overflow-x: scroll; */
+    overflow-x: hidden;
+    height: 360px;
+    width: 25em;
+  }
+  #cart1{
+    position: fixed;
+  }
+  #subTotal{
+    color: #3d4152;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    left: 59px;
+    top: -175px;
+  }
+  #totalAmount{
+    color: #3d4152;
+      font-size: 15px;
+      font-weight: 600;
+      position: relative;
+      left: 280px;
+      top: -224px;
+  }
+  #description{
+    font-size: 13px;
+      font-weight: 300;
+      color: #7e808c;
+      position: relative;
+      top: -60px;
+      left: 59px;
+  }
+  #itemCost{
+    font-size: 16px;
+      color: #535665;
+      position: relative;
+      left: 284px;
+      top: -29px;
+  }
+  #cart2{
+    height: 50px;
+  }
+  #billHeader{
+    font-weight: 500;
+    font-size: 13px;
+    color: #282c3f;
+    position: relative;
+    left: 60px;
+    top: 15px;
+  }
+  #itemTotal{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    top: -4px;
+    left: 60px;
+  }
+  #delPartFee{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    top: -68px;
+    left: 59px;
+  }
+  #tax{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    top: -131px;
+    left: 58px;
+  }
+  #totalAmt{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    left: 282px;
+    top: -52px;
+  }
+  #delFee{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    top: -115px;
+    left: 282px;
+  }
+  #taxFee{
+    font-size: 13px;
+    color: #686b78;
+    position: relative;
+    top: -179px;
+    left: 282px;
+  }

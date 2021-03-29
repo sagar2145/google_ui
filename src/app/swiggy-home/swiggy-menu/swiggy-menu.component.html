@@ -2,18 +2,18 @@
 <div class="row-6" id="second-row">
     <mat-toolbar [ngStyle]="{'backgroundColor': '#171a29'}" id="mn">
         <mat-toolbar-row>
-            <img src="assets/swiggyimages/moriz.jpg" id="img">
+            <img [src]="resDetails.imgURL" id="img">
 
-            <h1>Moriz Restaurant</h1>
+            <h1 id="resName">{{resDetails.resName}}</h1>
             <p>Fast Food, Snacks, Pastas, Salads, Beverages, Home Food, Italian, North Indian, Ma</p>
-            <h2>ACES Layout</h2>
+            <h2 id="address">ACES Layout</h2>
             <span id="rating">
-                <mat-icon>star</mat-icon>4.5
+            <mat-icon>star</mat-icon>{{resDetails.resRating}}
             </span>
             <span id="ratingcount">100+ Ratings</span>
             <hr>
             <mat-divider vertical></mat-divider>
-            <span id="time">30 mins</span>
+            <span id="time">{{resDetails.deliveryTime}} mins</span>
             <span id="timealias">Delivery Time</span>
             <hr>
             <mat-divider vertical></mat-divider>
@@ -38,18 +38,48 @@
         </div>
          <div class="col">
              <div *ngFor="let menu of menuData">
-            <p id="head" >{{menu.menuType}}</p>
+            <p id="head" >{{menu.itemName}}</p>
             <p id="item-count">4ITEMS</p>
-            <img src="assets/swiggyimages/veg.png" id="veg-icon">
-            <p id="item-name">{{menu.itemName}}</p>
+            <img src="assets/swiggyimages/bajrangi.jpg" id="veg-icon">
+            <!-- <p id="item-name">{{menu.itemName}}</p> -->
             <p id="price">{{menu.price}}</p>
-            <button class="menu-button">ADD</button>
+            <button class="menu-button" (click)="AddToCart(menu.id)">ADD</button>
             <hr>    
         </div>
             </div>
-         <div class="col">third</div>
+         <div class="col">
+            <!-- <button (click)="createDiv()">Create div</button>
+            <div class="container">
+              <div *ngFor="let div of divs">
+                  <p>div created</p> </div>
+            </div> -->
+            <div id="cart1">
+             <div *ngIf="showCart">
+                <h1 id="cartHeader">Cart</h1>
+                <h2 id="cartItemsCount">{{itemCount}} Items</h2>
+                <div id="cart">
+                <div *ngFor="let div of totalItems" id="cart2">
+            <h1 id="cartItemName">{{div.itemName}}</h1>
+
+            <div id="buttons">
+                <mat-icon id="remove" (click)="remove(div)">remove</mat-icon>
+                <h1 id="itemCount">{{div.count}}</h1>
+                <mat-icon id="add" (click)="add(div)">add</mat-icon>
+            </div>
+            <h2 id="itemCost">{{div.price}}</h2>
+            </div>
+            <div>
+                <h1 id="subTotal">SubTotal</h1>
+                <h2 id="totalAmount">{{subTotal}}</h2>
+                <h2 id="description">Extra charges may applly</h2>
+                
+            </div>
+            <button id="checkOut" (click)="checkOut()">CHECKOUT</button>
+            </div>
+        </div>
+         </div>
      </div>
-     
+    </div>
 
 
 

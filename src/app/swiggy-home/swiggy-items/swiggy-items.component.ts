@@ -15,6 +15,7 @@ export class SwiggyItemsComponent implements OnInit {
   // resData: any = [{imgURL:string,resName:string,resItem:string,resRating:string,
   //  deliveryTime:string,discount:string,offer:string}];
   resData: any;
+  id: any;
 
  num:number=10;
 
@@ -34,8 +35,9 @@ this.display();
 }
 
 showMenu(data){
-    console.log(data.resname);
-    this.route.navigate(['swiggymenu']);
+    console.log(data.resName);
+    this.id = data.swiggyId;
+    this.route.navigate(['swiggymenu'],{ state: { swiggyId: this.id }});
   }
 }
 
